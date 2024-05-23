@@ -1,0 +1,237 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color:white;
+}
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    overflow-x: hidden; 
+}
+.page1{
+    overflow: hidden;
+    height: 100vh;
+    max-width: 100vw;
+    position: relative;
+    padding-inline: 3rem;
+    /* display:grid; */
+    /* grid-template-rows: min-content 1fr; */
+    
+}
+.bgImage{
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    inset: 0;
+    z-index: -5;
+    width: 100vw;
+    height:100vh;
+}
+ .page1::after{
+    content:"";
+    background-color: rgba(0, 0, 0, 0.801); 
+    
+    position: absolute;
+    z-index: -4;
+    width: 100vw;
+    height:100vh;
+    inset: 0; 
+    /* border: 2px solid red; */
+} 
+
+/* body::-webkit-scrollbar{
+    display: none;
+} */
+.logo{
+    /* border:2px solid red; */
+    display:flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+.logoImage{
+    width: 70px;
+}
+.nav{
+    display:flex;
+    justify-content: space-evenly;
+}
+.navItems{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+.name{
+    font-size: 2rem;
+}
+.page1Main{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+    justify-content: space-evenly;
+    margin-top: 3.5rem;
+
+}
+.ml{
+   display:flex;
+   flex-direction: column;
+   gap: 2rem;
+   /* border: 2px solid red; */
+   
+}
+.mh2{
+    font-size: 5rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+.mh1{
+    font-size: 1.54rem;
+}
+.colored{
+    color:rgb(199, 176, 147)
+}
+.mr{
+    display: grid;
+    /* border: 2px solid red; */
+   place-items: center;
+}
+.mainBottle{
+    width: 600px;
+}
+.leaf1{
+    position:absolute;
+    top:10%;
+    right: 16.5%;
+    z-index: -1;
+    transform: scale(0.9); 
+    opacity: 0.8;
+}
+.forward{
+    aspect-ratio: 1;
+    border: 0.5px solid rgba(255, 255, 255, 0.671);
+    font-weight: bolder;
+    border-radius: 50%;
+    /* width: 30px; */
+    font-size: 2rem;
+    width: min-content;
+    display: grid;
+    place-items: center;
+}
+
+/**/
+
+.page2{
+    max-width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.98);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.grape1{
+    position: absolute;
+    left:-5%;
+    top: 0%;
+    z-index: 1;
+    transform: scale(0.65);
+}
+.barrel1{
+    position: absolute;
+    right:2%;
+    z-index: 1;
+    transform: scale(0.7);
+}
+.page2Main{
+    /* border: 2px solid red; */
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.5rem;
+    padding-block: 7.5rem;
+    background-color: rgba(73, 73, 73, 0.082);
+}
+.winesButton{
+    color:black;
+    font-size: 1.3rem;
+    padding:1rem 5rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    margin-top: 2.5rem;
+}
+
+/**/
+
+.page3{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.98);
+    display: flex;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    justify-content: space-evenly;
+    /* padding-inline: 5rem; */
+    /* column-gap: 2rem; */
+    align-items: center;
+    
+}
+.card{
+    padding: 2rem 2rem;
+    background-color: white; 
+    max-width: 50ch;
+    display: grid;
+    position: relative;
+    height: 600px;
+    
+}
+
+.desc>div{
+    color:black;
+}
+.desc{
+    display:flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    align-self: self-end;
+}
+.ch{
+    font-size: 1.8rem;
+}
+.cd{
+    opacity: 0.6;
+    line-height: 1.6rem;
+}
+.wineBottlel{
+    position: absolute;
+    transform: translateY(-26%);
+    /* border: 2px solid red; */
+    width: 170px;
+    justify-self: center;
+}
+.wineBottlec{
+    position: absolute;
+    transform: translateY(-44%) scale(0.27);
+    /* border: 2px solid red; */
+    
+    justify-self: center;  
+}
+.wineBottler{
+    position: absolute;
+    transform: translateY(-26%);
+    /* border: 2px solid red; */
+    width: 193px;
+    justify-self: center;
+}
+/* .effect{
+    position: relative;
+    object-fit: cover;
+     width: 100%; 
+    height: 100%;
+    z-index: 3;
+    background: transparent;
+     backdrop-filter: blur(0.05rem); 
+}  */
