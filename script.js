@@ -150,7 +150,7 @@ gsap.from(".wineBottlel,.wineBottler", {
     scrollTrigger:{
         trigger:".page2",
         scroller: "body",
-        markers:true,
+        // markers:true,
         scrub:2,
         start:"top top",
         end:"bottom top"
