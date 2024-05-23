@@ -226,12 +226,3 @@ body{
     width: 193px;
     justify-self: center;
 }
-/* .effect{
-    position: relative;
-    object-fit: cover;
-     width: 100%; 
-    height: 100%;
-    z-index: 3;
-    background: transparent;
-     backdrop-filter: blur(0.05rem); 
-}  */

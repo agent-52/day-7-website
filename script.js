@@ -170,3 +170,36 @@ gsap.from(".wineBottlec", {
         end:"90% top"
     }
 })
+
+const wineBottlel = document.querySelector(".wineBottlel");
+
+wineBottlel.addEventListener("mouseenter",()=>{
+    TweenMax.to(wineBottlel, 0.2, {rotate:"5", yoyo:true, repeat:3});
+
+})
+wineBottlel.addEventListener("mouseleave",()=>{
+    gsap.to(wineBottlel, {rotate:0})
+
+})
+
+const wineBottler = document.querySelector(".wineBottler");
+
+wineBottler.addEventListener("mouseenter",()=>{
+    TweenMax.to(wineBottler, 0.2, {rotate:"5", yoyo:true, repeat:3});
+
+})
+wineBottler.addEventListener("mouseleave",()=>{
+    gsap.to(wineBottler, {rotate:0})
+
+})
+
+const wineBottlec = document.querySelector(".wineBottlec");
+
+wineBottlec.addEventListener("mouseenter",()=>{
+    TweenMax.to(wineBottlec, 0.2, {rotate:"-5", yoyo:true, repeat:3});
+
+})
+wineBottlec.addEventListener("mouseleave",()=>{
+    gsap.to(wineBottlec, {rotate:0})
+
+})
